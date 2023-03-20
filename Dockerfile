@@ -1,5 +1,7 @@
 FROM php:7.3-apache
 
+ARG COCKPIT_VERSION="master"
+
 RUN apt-get update \
     && apt-get install -y \
 		wget zip unzip \
